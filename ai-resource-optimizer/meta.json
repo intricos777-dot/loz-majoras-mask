@@ -1,0 +1,9 @@
+{
+    "name": "AI Resource Optimizer",
+    "version": "1.0",
+    "description": "Advanced AI-powered resource allocation optimizer that dynamically adjusts CPU, GPU, and memory for mining workloads using predictive modeling and real-time telemetry.",
+    "requirements": ["Python 3.9+", "psutil", "numpy", "Root/admin privileges"],
+    "platform": "Windows, Linux",
+    "category": "Mining & Performance Tools",
+    "license": "Personal Use Only"
+}
