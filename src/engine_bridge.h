@@ -6,8 +6,7 @@ namespace loz_mm {
   class EngineBridge {
   public:
     bool init(const char* title, int width, int height);
-    void frame();
-    void run();
+    int run();
     void shutdown();
   };
 }

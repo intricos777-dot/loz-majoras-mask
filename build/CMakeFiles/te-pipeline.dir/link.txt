@@ -1,0 +1,2 @@
+/usr/bin/ar qc libte-pipeline.a "CMakeFiles/te-pipeline.dir/home/sin/Projects/twilight-elysium/src/pipeline/frame_graph_stub.cpp.o"
+/usr/bin/ranlib libte-pipeline.a

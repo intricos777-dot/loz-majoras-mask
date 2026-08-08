@@ -1,0 +1,2 @@
+/usr/bin/ar qc libte-shader.a "CMakeFiles/te-shader.dir/home/sin/Projects/twilight-elysium/src/shader/shader_stub.cpp.o"
+/usr/bin/ranlib libte-shader.a

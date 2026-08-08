@@ -1,0 +1,2 @@
+/usr/bin/ar qc libte-asset.a "CMakeFiles/te-asset.dir/home/sin/Projects/twilight-elysium/src/asset/asset_stub.cpp.o"
+/usr/bin/ranlib libte-asset.a

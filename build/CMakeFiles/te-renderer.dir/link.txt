@@ -1,0 +1,2 @@
+/usr/bin/ar qc libte-renderer.a "CMakeFiles/te-renderer.dir/home/sin/Projects/twilight-elysium/src/renderer/renderer.cpp.o" "CMakeFiles/te-renderer.dir/home/sin/Projects/twilight-elysium/src/renderer/material/material.cpp.o"
+/usr/bin/ranlib libte-renderer.a

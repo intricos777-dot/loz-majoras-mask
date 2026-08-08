@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/mm.dir/link.d CMakeFiles/mm.dir/src/main.cpp.o CMakeFiles/mm.dir/src/engine_bridge.cpp.o -o mm  libte-engine.a libte-renderer.a libte-shader.a libte-pipeline.a libte-asset.a libte-engine.a
