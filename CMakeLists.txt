@@ -41,8 +41,10 @@ target_link_libraries(te-asset PRIVATE te-engine)
 add_executable(mm
     src/main.cpp
     src/engine_bridge.cpp
+    src/time_cycle.cpp
+    src/player_movement.cpp
 )
 target_link_libraries(mm PRIVATE te-engine te-renderer te-shader te-pipeline te-asset)
 
 enable_testing()
-add_test(NAME mm-core COMMAND mm)
+add_test(NAME mm-core COMMAND mm --core)

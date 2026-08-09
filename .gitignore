@@ -1,1 +1,5 @@
 build/
+build/
+Testing/
+data/progress.json
+logs/
