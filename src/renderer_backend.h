@@ -1,6 +1,6 @@
 #pragma once
-#include <twilight-elysium/src/renderer/renderer.h>
-#include <twilight-elysium/src/engine/math_types.h>
+#include "renderer/renderer.h"
+#include "engine/math_types.h"
 #include <cstdint>
 
 namespace loz_mm {

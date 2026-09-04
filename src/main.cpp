@@ -21,7 +21,7 @@ int run_core() {
     check(clock.day() == 1 && clock.hours() == 0, "starts at dawn of Day 1");
 
     uint32_t dawns = 0;
-    for (int i = 0; i < loz_mm::kSecondsForThreeDays * 2; ++i)
+    for (uint32_t i = 0; i < loz_mm::kSecondsForThreeDays * 2; ++i)
         dawns += clock.tick(1.0f);
     check(dawns == 2, "exactly two dawn crossovers across three days");
     check(clock.wrapped(), "clock wraps after Day 3");

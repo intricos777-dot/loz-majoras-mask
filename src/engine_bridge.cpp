@@ -23,7 +23,7 @@ bool EngineBridge::init(const char* title, int width, int height) {
     g_clock = &clock;
   }
 
-  te::Engine::instance().attach_tick([](float dt, uint64_t frame) {
+  te::Engine::instance().attach_tick([](float dt, uint64_t /*frame*/) {
     if (g_clock) g_clock->tick(dt);
   });
 

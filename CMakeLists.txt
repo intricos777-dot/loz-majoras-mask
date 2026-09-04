@@ -1,10 +1,16 @@
 cmake_minimum_required(VERSION 3.20)
-project(loz-majoras-mask VERSION 0.1.0 LANGUAGES CXX)
+project(loz-majoras-mask VERSION 0.2.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(TE_DIR ${CMAKE_SOURCE_DIR}/../twilight-elysium)
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+# Self-contained copy of the Twilight Elysium engine subset used by this
+# bridge (see third_party/te/NOTICE). No external build dependency.
+set(TE_DIR ${CMAKE_SOURCE_DIR}/third_party/te)
 
 add_library(te-engine STATIC
     ${TE_DIR}/src/engine/engine.cpp
@@ -43,8 +49,13 @@ add_executable(mm
     src/engine_bridge.cpp
     src/time_cycle.cpp
     src/player_movement.cpp
+    src/renderer_backend.cpp
 )
 target_link_libraries(mm PRIVATE te-engine te-renderer te-shader te-pipeline te-asset)
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_compile_options(mm PRIVATE -Wall -Wextra)
+endif()
 
 enable_testing()
 add_test(NAME mm-core COMMAND mm --core)

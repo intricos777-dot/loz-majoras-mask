@@ -1,4 +1,5 @@
 #include "renderer_backend.h"
+#include "engine/engine.h"
 #include <cstdio>
 #include <cstring>
 
@@ -14,7 +15,7 @@ void main() {
 }
 )";
 
-static const char* kFragment = R"(#version 450
+[[maybe_unused]] static const char* kFragment = R"(#version 450
 layout(set=0,binding=0) uniform sampler2D tex;
 layout(location=0) in vec2 texcoord;
 layout(location=0) out vec4 outColor;
@@ -23,7 +24,7 @@ void main() {
 }
 )";
 
-static float screen_quad(uint32_t width, uint32_t height,
+[[maybe_unused]] static float screen_quad(uint32_t width, uint32_t height,
                          float x0, float y0, float x1, float y1,
                          float u0, float v0, float u1, float v1,
                          QuadVertex* out) {
@@ -40,7 +41,7 @@ static float screen_quad(uint32_t width, uint32_t height,
 
 bool RendererBackend::init(void* window_handle) {
   if (initialized_) return true;
-  renderer_ = te::Engine::instance().create_renderer();
+  renderer_ = te::create_renderer();
   if (!renderer_) return false;
   if (!renderer_->initialize(window_handle)) return false;
 
@@ -66,6 +67,11 @@ bool RendererBackend::init(void* window_handle) {
 }
 
 void RendererBackend::shutdown() {
+  if (renderer_) {
+    renderer_->shutdown();
+    delete renderer_;
+    renderer_ = nullptr;
+  }
   initialized_ = false;
 }
 
