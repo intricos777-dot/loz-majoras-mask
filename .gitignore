@@ -1,5 +1,35 @@
+# Build artifacts
 build/
-build/
+build-*/
+out/
 Testing/
-data/progress.json
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Secrets guard
+.env
+*.pem
+*.key
+
+# Logs
 logs/
+*.log
