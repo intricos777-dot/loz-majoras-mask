@@ -12,9 +12,22 @@ A fork-ready home for two ways to play *Majora's Mask* on modern hardware:
   Windows. This is the "gigachad" path — a modern, widescreen, high-res,
   moddable PC port.
 
-> **You must own an original copy of The Legend of Zelda: Majora's Mask.**
-> This project contains **no Nintendo assets** — the game extracts them from
-> *your own* legally-dumped ROM at first launch (`.z64`, `.n64` or `.v64`).
+> ## ⚠️ Required to play: your own copy of the original game
+>
+> **This build will NOT run without your own original copy of
+> *The Legend of Zelda: Majora's Mask*.** It ships with **zero Nintendo
+> assets** — the game extracts them from *your* legally-dumped ROM at first
+> launch (`.z64`, `.n64` or `.v64`, verified by hash).
+>
+> The game cannot be downloaded from this repository or from any ROM-hosting
+> site. Get it from *your own hands*: dump your cartridge (e.g. GB Operator or
+> a RetroStage cart reader), your Wii Virtual Console purchase, or your
+> GameCube Collector's Edition disc (CleanRip).
+>
+> *Unlike our Master Quest build for Ocarina of Time, which packaged its
+> extracted asset pack and boots straight from the binary — this Majora's Mask
+> port deliberately leaves all copyrighted content to each player's own
+> legally-dumped copy.*
 
 ---
 
@@ -23,7 +36,7 @@ A fork-ready home for two ways to play *Majora's Mask* on modern hardware:
 | Track | State |
 |---|---|
 | A — `mm` engine core | ✅ Builds & self-tests green (13/13 core checks, ctest 1/1) |
-| B — 2 Ship 2 Harkinian | ✅ Wiring complete; build one command away (needs your ROM) |
+| B — 2 Ship 2 Harkinian | ✅ Wiring complete; build one command away — **requires your own original game dump to play** |
 
 ---
 
@@ -55,9 +68,13 @@ CMake + a C++20 toolchain).
 ## Track B — build the full game via 2 Ship 2 Harkinian (recommended)
 
 One command installs dependencies, clones upstream **2S2H 5.0.1**, and builds
-the port. If you place a Majora's Mask ROM next to the script, it is
-auto-extracted; otherwise the game asks you to locate your ROM on first launch
-(built-in file picker).
+the port. If you place your legally-dumped Majora's Mask ROM (.z64/.n64/.v64)
+next to the script, it is auto-extracted; otherwise the game asks you to
+locate your ROM on first launch (built-in file picker).
+
+> ⚠️ **You will need your own original copy of the game to play**
+> (see the notice at the top). No ROM or extracted assets are included or
+> downloadable from this repository.
 
 ### Linux / macOS
 ```bash
