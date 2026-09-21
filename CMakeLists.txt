@@ -30,17 +30,19 @@ add_library(te-renderer STATIC
 target_link_libraries(te-renderer PRIVATE te-engine)
 
 add_library(te-shader STATIC
-    ${TE_DIR}/src/shader/shader_stub.cpp
+    ${TE_DIR}/src/shader/shader_pipeline.cpp
 )
+target_include_directories(te-shader PUBLIC ${TE_DIR}/assets/shaders)
 target_link_libraries(te-shader PRIVATE te-engine)
 
 add_library(te-pipeline STATIC
-    ${TE_DIR}/src/pipeline/frame_graph_stub.cpp
+    ${TE_DIR}/src/pipeline/render_graph.cpp
 )
-target_link_libraries(te-pipeline PRIVATE te-engine)
+target_include_directories(te-pipeline PUBLIC ${TE_DIR}/src/pipeline)
+target_link_libraries(te-pipeline PRIVATE te-engine te-shader)
 
 add_library(te-asset STATIC
-    ${TE_DIR}/src/asset/asset_stub.cpp
+    ${TE_DIR}/src/asset/asset_manager.cpp
 )
 target_link_libraries(te-asset PRIVATE te-engine)
 
@@ -59,3 +61,9 @@ endif()
 
 enable_testing()
 add_test(NAME mm-core COMMAND mm --core)
+
+# Headless module proof: GLB import, render graph cull, shader compile
+add_executable(te-asset-smoke ${TE_DIR}/tests/asset_smoke_test.cpp)
+target_compile_definitions(te-asset-smoke PRIVATE TE_SHADER_DIR="${TE_DIR}/assets/shaders")
+target_link_libraries(te-asset-smoke PRIVATE te-engine te-asset te-pipeline te-shader)
+add_test(NAME te-asset-smoke COMMAND te-asset-smoke)
