@@ -1,0 +1,68 @@
+{
+  "dungeons": [
+    {
+      "id": "woodfall",
+      "name": "Woodfall Temple",
+      "region": "Woodfall",
+      "lore": "The temple of the swamp, crowned with poison. The Deku Princess was cursed here, and the insects answer to Odolwa.",
+      "floors": 3,
+      "rooms": 12,
+      "stray_fairies": 5,
+      "boss": "Odolwa, King of Insects",
+      "boss_element": "Nature",
+      "reward": "Giant's Mask (Swamp)",
+      "stray_fairy_reward": "Great Fairy's Sword",
+      "items": ["Map", "Compass", "Boss Key", "Quiver (40)", "Red Potion", "Fairy"],
+      "enemies": ["Deku Baba", "Fire Keese", "Dragonfly", "Dexihand", "Wizzrobe"],
+      "themes": ["poison_swamp", "insect", "deku", "nature"]
+    },
+    {
+      "id": "snowhead",
+      "name": "Snowhead Temple",
+      "region": "Snowhead",
+      "lore": "The temple of the frozen mountain. Goht, the Masked Mechanical Beast, grieves here — a Goron's rage given form.",
+      "floors": 3,
+      "rooms": 12,
+      "stray_fairies": 5,
+      "boss": "Goht, the Masked Mechanical Beast",
+      "boss_element": "Ice/Fire",
+      "reward": "Giant's Mask (Mountain)",
+      "stray_fairy_reward": "Magic Power (Double)",
+      "items": ["Map", "Compass", "Boss Key", "Bomb Bag (30)", "Blue Potion", "Fairy"],
+      "enemies": ["Freezard", "White Wolfos", "Eeno", "Dragonfly", "Wizzrobe"],
+      "themes": ["ice", "goron", "mechanical", "blizzard"]
+    },
+    {
+      "id": "great_bay",
+      "name": "Great Bay Temple",
+      "region": "Great Bay",
+      "lore": "The temple of the sea. Gyorg, the Aquatic Beast, churns the waters — a Zora's sorrow given fang and fin.",
+      "floors": 2,
+      "rooms": 8,
+      "stray_fairies": 5,
+      "boss": "Gyorg, the Aquatic Beast",
+      "boss_element": "Water",
+      "reward": "Giant's Mask (Ocean)",
+      "stray_fairy_reward": "Defense Up",
+      "items": ["Map", "Compass", "Boss Key", "Quiver (50)", "Green Potion", "Fairy"],
+      "enemies": ["Dire Fan", "Aqua Baba", "Shell Blade", "Wizzrobe", "Mini-Gyorg"],
+      "themes": ["water", "zora", "ocean", "currents"]
+    },
+    {
+      "id": "stone_tower",
+      "name": "Stone Tower Temple",
+      "region": "Stone Tower",
+      "lore": "The temple that reaches past the sky, inverted by the Elegy of Emptiness. Twinmold, the Giant Insect, guards the end.",
+      "floors": 2,
+      "rooms": 8,
+      "stray_fairies": 5,
+      "boss": "Twinmold, the Giant Insect",
+      "boss_element": "Earth/Void",
+      "reward": "Giant's Mask (Ikana)",
+      "stray_fairy_reward": "Great Fairy's Tears",
+      "items": ["Map", "Compass", "Boss Key", "Bomb Bag (40)", "Blue Potion", "Light Arrows"],
+      "enemies": ["Death Armos", "Floormaster", "Garull", "Wizzrobe", "Color Bubble"],
+      "themes": ["stone", "inverted", "light_arrows", "ancient_ikana"]
+    }
+  ]
+}

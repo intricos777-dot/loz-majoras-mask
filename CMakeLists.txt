@@ -46,14 +46,23 @@ add_library(te-asset STATIC
 )
 target_link_libraries(te-asset PRIVATE te-engine)
 
+# MM game sources
 add_executable(mm
     src/main.cpp
     src/engine_bridge.cpp
     src/time_cycle.cpp
     src/player_movement.cpp
     src/renderer_backend.cpp
+    src/npc.cpp
+    src/world.cpp
+    src/mask.cpp
+    src/inventory.cpp
+    src/quest.cpp
+    src/dungeon.cpp
+    src/game_state.cpp
 )
 target_link_libraries(mm PRIVATE te-engine te-renderer te-shader te-pipeline te-asset)
+target_include_directories(mm PRIVATE src)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(mm PRIVATE -Wall -Wextra)
@@ -64,6 +73,9 @@ add_test(NAME mm-core COMMAND mm --core)
 
 # Headless module proof: GLB import, render graph cull, shader compile
 add_executable(te-asset-smoke ${TE_DIR}/tests/asset_smoke_test.cpp)
-target_compile_definitions(te-asset-smoke PRIVATE TE_SHADER_DIR="${TE_DIR}/assets/shaders")
+target_compile_definitions(te-asset-smoke PRIVATE TE_SHADER_DIR=\"${TE_DIR}/assets/shaders\")
 target_link_libraries(te-asset-smoke PRIVATE te-engine te-asset te-pipeline te-shader)
 add_test(NAME te-asset-smoke COMMAND te-asset-smoke)
+
+# Full game state test
+add_test(NAME mm-game COMMAND mm --game)

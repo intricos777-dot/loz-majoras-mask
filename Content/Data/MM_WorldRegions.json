@@ -1,0 +1,274 @@
+{
+  "regions": [
+    {
+      "id": "clock_town",
+      "name": "Clock Town",
+      "areas": [
+        {
+          "id": "east_clock_town",
+          "name": "East Clock Town",
+          "description": "The east side — Stock Pot Inn, Milk Bar, Town Observatory",
+          "buildings": ["Stock Pot Inn", "Milk Bar", "Town Observatory"],
+          "npcs": ["Anju", "MadameAroma", "Bomber"],
+          "shop": true
+        },
+        {
+          "id": "west_clock_town",
+          "name": "West Clock Town",
+          "description": "The west side — Trading Post, Bomb Shop, Curiosity Shop, Post Office",
+          "buildings": ["Trading Post", "Bomb Shop", "Curiosity Shop", "Post Office"],
+          "npcs": ["Postman", "Sakon", "OldLady"],
+          "shop": true
+        },
+        {
+          "id": "north_clock_town",
+          "name": "North Clock Town",
+          "description": "The north side — the park, the Mayor's Office, the exit to the Observatory",
+          "buildings": ["Mayor's Office", "Park"],
+          "npcs": ["MayorDotar", "Kamaro"],
+          "shop": false
+        },
+        {
+          "id": "south_clock_town",
+          "name": "South Clock Town",
+          "description": "The south side — Clock Tower entrance, the square, the exit to Termina Field",
+          "buildings": ["Clock Tower"],
+          "npcs": ["SkullKid", "Tael", "HappyMaskSalesman"],
+          "shop": false
+        }
+      ],
+      "shops": ["Trading Post", "Bomb Shop", "Curiosity Shop", "Honey & Darling", "Treasure Chest", "Milk Bar"],
+      "major_npcs": ["Anju", "Kafei", "Postman", "MayorDotar", "MadameAroma", "Bomber", "Sakon", "GuruGuru"],
+      "questlines": ["KafeiQuest", "AnjuAndKafei", "BombersCode", "PostmanEscape"]
+    },
+    {
+      "id": "southern_swamp",
+      "name": "Southern Swamp",
+      "areas": [
+        {
+          "id": "swamp_main",
+          "name": "Southern Swamp (Main)",
+          "description": "The poisoned swamp — Deku shrines and the Swamp Tourist Center"
+        },
+        {
+          "id": "deku_palace",
+          "name": "Deku Palace",
+          "description": "The royal palace of the Deku — the Princess awaits"
+        },
+        {
+          "id": "road_to_swamp",
+          "name": "Road to Southern Swamp",
+          "description": "The path from Termina Field to the swamp"
+        }
+      ],
+      "major_npcs": ["DekuPrincess", "DekuKing", "Monkey"],
+      "questlines": ["WoodfallClear"]
+    },
+    {
+      "id": "woodfall",
+      "name": "Woodfall Temple",
+      "areas": [
+        {
+          "id": "woodfall_temple_1f",
+          "name": "Woodfall Temple 1F",
+          "description": "First floor — the Deku flowers and the first fairies"
+        },
+        {
+          "id": "woodfall_temple_2f",
+          "name": "Woodfall Temple 2F",
+          "description": "Second floor — the lily pad maze"
+        },
+        {
+          "id": "woodfall_temple_3f",
+          "name": "Woodfall Temple 3F",
+          "description": "Third floor — the Odolwa antechamber"
+        },
+        {
+          "id": "woodfall_temple_boss",
+          "name": "Woodfall Temple (Odolwa)",
+          "description": "The boss chamber of Odolwa"
+        }
+      ],
+      "boss": "Odolwa",
+      "questlines": ["WoodfallClear"]
+    },
+    {
+      "id": "mountain_village",
+      "name": "Mountain Village",
+      "areas": [
+        {
+          "id": "mountain_village_main",
+          "name": "Mountain Village",
+          "description": "The frozen village beneath the blizzard"
+        },
+        {
+          "id": "goron_elder_cave",
+          "name": "Goron Elder's Cave",
+          "description": "The cave where the Goron Elder is frozen"
+        }
+      ],
+      "major_npcs": ["GoronElder", "Darmani"],
+      "questlines": ["SnowheadClear", "GoronElder"]
+    },
+    {
+      "id": "snowhead",
+      "name": "Snowhead Temple",
+      "areas": [
+        {
+          "id": "snowhead_temple_1f",
+          "name": "Snowhead Temple 1F"
+        },
+        {
+          "id": "snowhead_temple_2f",
+          "name": "Snowhead Temple 2F"
+        },
+        {
+          "id": "snowhead_temple_3f",
+          "name": "Snowhead Temple 3F"
+        },
+        {
+          "id": "snowhead_temple_boss",
+          "name": "Snowhead Temple (Goht)"
+        }
+      ],
+      "boss": "Goht",
+      "questlines": ["SnowheadClear"]
+    },
+    {
+      "id": "great_bay",
+      "name": "Great Bay Coast & Temple",
+      "areas": [
+        {
+          "id": "great_bay_coast",
+          "name": "Great Bay Coast"
+        },
+        {
+          "id": "pirates_fortress",
+          "name": "Pirate's Fortress"
+        },
+        {
+          "id": "great_bay_temple_1f",
+          "name": "Great Bay Temple 1F"
+        },
+        {
+          "id": "great_bay_temple_2f",
+          "name": "Great Bay Temple 2F"
+        },
+        {
+          "id": "great_bay_temple_boss",
+          "name": "Great Bay Temple (Gyorg)"
+        }
+      ],
+      "boss": "Gyorg",
+      "questlines": ["GreatBayClear"]
+    },
+    {
+      "id": "zora_hall",
+      "name": "Zora Hall",
+      "areas": [
+        {
+          "id": "zora_hall_main",
+          "name": "Zora Hall"
+        },
+        {
+          "id": "lulu_room",
+          "name": "Lulu's Room"
+        },
+        {
+          "id": "zora_band_room",
+          "name": "Zora Band Room"
+        }
+      ],
+      "major_npcs": ["Lulu", "GuruGuru", "Mikau"],
+      "questlines": ["ZoraEggs", "Lulu"]
+    },
+    {
+      "id": "ikana",
+      "name": "Ikana Canyon & Stone Tower",
+      "areas": [
+        {
+          "id": "ikana_graveyard",
+          "name": "Ikana Graveyard"
+        },
+        {
+          "id": "ikana_canyon",
+          "name": "Ikana Canyon"
+        },
+        {
+          "id": "beneath_well",
+          "name": "Beneath the Well"
+        },
+        {
+          "id": "ancient_castle_ikana",
+          "name": "Ancient Castle of Ikana"
+        },
+        {
+          "id": "stone_tower_1f",
+          "name": "Stone Tower Temple 1F"
+        },
+        {
+          "id": "stone_tower_2f",
+          "name": "Stone Tower Temple 2F"
+        },
+        {
+          "id": "stone_tower_boss",
+          "name": "Stone Tower Temple (Twinmold)"
+        }
+      ],
+      "boss": "Twinmold",
+      "major_npcs": ["Pamela", "PoeCollector"],
+      "questlines": ["StoneTowerClear", "PamelaFather", "PoeCollector"]
+    },
+    {
+      "id": "romani_ranch",
+      "name": "Romani Ranch",
+      "areas": [
+        {
+          "id": "ranch_main",
+          "name": "Romani Ranch"
+        },
+        {
+          "id": "ranch_barn",
+          "name": "Ranch Barn"
+        }
+      ],
+      "major_npcs": ["Cremia", "Romani", "Gorman"],
+      "questlines": ["RomaniRanch"]
+    },
+    {
+      "id": "termina_field",
+      "name": "Termina Field",
+      "areas": [
+        {
+          "id": "termina_field_main",
+          "name": "Termina Field"
+        },
+        {
+          "id": "lon_lon_ranch",
+          "name": "Lon Lon Ranch"
+        },
+        {
+          "id": "milk_road",
+          "name": "Milk Road"
+        }
+      ],
+      "major_npcs": ["Keaton"],
+      "questlines": []
+    },
+    {
+      "id": "the_moon",
+      "name": "The Moon",
+      "areas": [
+        {
+          "id": "moon_field",
+          "name": "The Moon's Surface"
+        },
+        {
+          "id": "majoras_chamber",
+          "name": "Majora's Chamber"
+        }
+      ],
+      "questlines": ["MainQuest"]
+    }
+  ]
+}
