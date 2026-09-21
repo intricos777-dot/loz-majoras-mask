@@ -1,0 +1,22 @@
+{
+  "source": "The Legend of Zelda: Majora's Mask (2000), Nintendo EAD",
+  "framing": "A parallel land, not Hyrule. The Skull Kid, wearing a stolen mask older than his mischief, holds Termina between three days and the falling moon. Link, riding Epona from the Lost Woods, has 72 hours — unless he wears the ocarina and the clock's own song.",
+  "cycle": {
+    "hours": 72,
+    "days": [
+      {"day": 1, "name": "The First Day", "events": "Link arrives in Clock Town; the carnival readies; the Bombers' secret signal; the Deku curse in the swamp."},
+      {"day": 2, "name": "The Second Day", "events": "The swamp's poison deepens; Snowhead's blizzard chokes the mountain; the sea off Great Bay grows wild; the stones of Ikana hum."},
+      {"day": 3, "name": "The Third Day", "events": "The moon hangs low and watching; the four giants are summoned by the Oath to Order; the door in the moon stands open."}
+    ],
+    "law": "Play the Song of Time and the day turns back; the ocarina is the only true authority in Termina.",
+    "moon_fall": "On the third midnight the moon falls, and everything the land was is taken back."
+  },
+  "regions": [
+    {"name": "Clock Town", "lore": "The carnival city at Termina's center — where the Bombers run, the bank guards your rupees, and everyone is too busy celebrating to see the sky."},
+    {"name": "Woodfall / Southern Swamp", "lore": "The poisoned swamp of the Deku — the Princess of the Deku turned to wood, the Monkey accused, the temple choked under Woodfall's crown."},
+    {"name": "Snowhead / Mountain Village", "lore": "The frozen mountain of the Gorons — a blizzard that is the grief of Goht, and the elder who froze himself to watch his people starve."},
+    {"name": "Great Bay / Zora Hall", "lore": "The sea of the Zora — the guitarist Lulu, whose voice the tribe stole; the lab of the scientist; the temple beneath the waves."},
+    {"name": "Ikana Canyon", "lore": "The kingdom of the dead — the Ancient Castle of Ikana, the Poe Collector's prizes, the Stone Tower that reaches past the sky, and the Stray Fairies in the well."},
+    {"name": "The Moon", "lore": "At the heart of the falling moon: a field of children, a chamber of trials, and the mask that wears its own wearer's face."}
+  ]
+}

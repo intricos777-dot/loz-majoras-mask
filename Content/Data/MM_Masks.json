@@ -1,0 +1,20 @@
+{
+  "note": "The masks of Majora's Mask. Transformation masks change the body; the others change the story.",
+  "transformation": [
+    {"name":"Deku Mask","bearer":"Deku Scrub","power":"spin, hop, fly on flowers — and the curse the Skull Kid laid on a boy who refused the mask"},
+    {"name":"Goron Mask","bearer":"Goron","power":"roll like a boulder, punch like a landslide, sleep through danger"},
+    {"name":"Zora Mask","bearer":"Zora","power":"swim the depths, throw fins like blades, sing under water"},
+    {"name":"Fierce Deity's Mask","bearer":"none — the mask of the moon's last gift","power":"the double helix blade and the fury that ends Majora. Said to be the face of the hero when all other masks are one."}
+  ],
+  "story": [
+    {"name":"Skull Kid's Mask","note":"the mask that started it — Majora, ancient and angry, riding the mischief of a lonely forest child"},
+    {"name":"Couple's Mask","note":"Kafei and Anju, married on the third day — the bond that outlasts the moon"},
+    {"name":"Kafei's Mask","note":"the stolen wedding mask of the Skull Kid; its theft broke four hearts"},
+    {"name":"Mask of Truth","note":"hear what the Gossip Stones dare not say"},
+    {"name":"Romani's Mask","note":"the mask of the farm girl who saw the moon fall and refused to look away"},
+    {"name":"Mask of Scents","note":"the Deku Butler's lost son; the mask that remembers smell"},
+    {"name":"Garo's Mask","note":"the mask of the undying swordsman of Ikana — kill a Garo and the mask keeps his pride"},
+    {"name":"Postman's Hat","note":"deliver on time; the postman has never missed a deadline, not even for the moon"},
+    {"name":"Bunny Hood","note":"the fastest feet in Termina — carnival con-artistry at its purest"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "cast": [
+    {"name":"Skull Kid","role":"the stolen-friend mischief-maker","note":"a lonely imp from the Lost Woods, riding a stolen mask and a stolen moon"},
+    {"name":"Majora","role":"the ancient mask","note":"older than the carnival, angrier than the moon; it ends what it touches, and it is what it is"},
+    {"name":"Tatl","role":"fairy companion","note":"the sharp one — she scolds, she scouts, she stays. Her brother fell to the curse; her loyalty did not."},
+    {"name":"Tael","role":"fairy captive","note":"the quiet one, taken with the Skull Kid into the mask's shadow"},
+    {"name":"The Happy Mask Salesman","role":"merchant of faces","note":"he sells masks, and he buys them; his smile is a transaction. Steal from him and the smile goes elsewhere."},
+    {"name":"The Four Giants","role":"the Oath to Order","note":"the swamp, the mountain, the sea, and the valley — four giants who swore to protect the land, and who answer only to the song that summons them"},
+    {"name":"Anju","role":"the innkeeper's daughter","note":"waiting at the inn for Kafei, through every third day, on every cycle"},
+    {"name":"Kafei","role":"the groom who vanished","note":"turned young and hunted by his own theft; the only man who married at the end of the world"},
+    {"name":"Cremia","role":"the Romani Ranch eldest","note":"she guards the milk, her little sister, and the walls against the moon"},
+    {"name":"Romani","role":"the farm girl","note":"she saw the sky grow a face, and she taught the hero how to ride for a shooting star"},
+    {"name":"The Moon Child","role":"the last door","note":"inside the falling moon, a field, a slide, and a mask that looks like a child wearing a god"}
+  ],
+  "termina_truth": "Termina is a parallel land — 'a world wrapped in the story of a different hero.' Every soul in it lives the same three days until the ocarina unmakes them and remakes them kinder."
+}
